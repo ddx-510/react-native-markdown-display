@@ -2,6 +2,10 @@
 
 It a 100% compatible CommonMark renderer, a react-native markdown renderer done right. This is __not__ a web-view markdown renderer but a renderer that uses native components for all its elements. These components can be overwritten and styled as needed.
 
+## Custom changes:
+
+Based on [@ronradtke/react-native-markdown-display](https://github.com/RonRadtke/react-native-markdown-display), Added new handling of AST nodes keys, to solve remount issues.
+
 ### Compatibility with react-native-markdown-renderer
 
 This is intended to be a replacement for react-native-markdown-renderer, with a variety of bug fixes and enhancements - **Due to how the new style rules work, there may be some tweaking needed**, [see how to style stuff section below](#How-to-style-stuff)
