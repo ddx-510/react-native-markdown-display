@@ -16,7 +16,7 @@ function createNode(token, tokenIndex) {
   if (token.attrs) {
     attributes = token.attrs.reduce((prev, curr) => {
       const [name, value] = curr;
-      return {...prev, [name]: value};
+      return { ...prev, [name]: value };
     }, {});
   }
 
@@ -27,7 +27,7 @@ function createNode(token, tokenIndex) {
     sourceMeta: token.meta,
     block: token.block,
     markup: token.markup,
-    key: getUniqueID() + '_' + type,
+    key: type + '_' + tokenIndex,
     content,
     tokenIndex,
     index: 0,
